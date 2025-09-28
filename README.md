@@ -143,7 +143,7 @@ COPY . ./
 RUN pip install pip pipenv --upgrade
 RUN pipenv install --skip-lock --system --dev
 
-LABEL org.opencontainers.image.source https://github.com/JayantGoel001/Jupyter-x-Docker
+LABEL org.opencontainers.image.source https://github.com/manichandrika1380/Jupyter-x-Docker
 LABEL org.opencontainers.image.description Jupyter Notebook Server built with Docker & deployed on Heroku.
 
 RUN [ "chmod", "+x", "./scripts/entrypoint.sh" ]
@@ -205,7 +205,7 @@ RUN pip install fastai
 # Project installs
 RUN pipenv install --skip-lock --system --dev
 
-LABEL org.opencontainers.image.source https://github.com/JayantGoel001/Jupyter-x-Docker
+LABEL org.opencontainers.image.source https://github.com/manichandrika1380/Jupyter-x-Docker
 LABEL org.opencontainers.image.description Jupyter Notebook Server built with Docker & deployed on Heroku.
 
 RUN [ "chmod", "+x", "./scripts/entrypoint.sh" ]
@@ -232,8 +232,8 @@ I perfer using a `entrypoint.sh` script for the `CMD` in Dockerfiles.
 #### 6. Build & Run Docker Locally
 
 ```bash
-docker build -t jayantgoel001/jupyter-x-docker:latest .
-docker run --env PORT=8888 -it -p 8888:8888 jayantgoel001/jupyter-x-docker
+docker build -t manichandrika1380/jupyter-x-docker:latest .
+docker run --env PORT=8888 -it -p 8888:8888 manichandrika1380/jupyter-x-docker
 ```
 
 #### 7. Heroku Setup
